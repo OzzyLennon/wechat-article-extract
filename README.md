@@ -32,11 +32,37 @@ cd wechat-article-extract
 pip install -r requirements.txt
 ```
 
-作为 Agent Skill 安装（走 `npx skills` 协议，可被 skills.sh 等目录自动收录）：
+作为 Agent Skill 安装（走 `npx skills` 协议）：
 
 ```bash
 npx skills add https://github.com/OzzyLennon/wechat-article-extract --skill wechat-article-extract
 ```
+
+## 会被哪些目录收录
+
+**自动爬 GitHub（什么都不用做）** —— 仓库建好、文件结构对、**打了 `agent-skill` 标签**，就会被这些目录抓走：
+
+- `skillsmp.com`（93 万访问/月）
+- `claudemarketplaces.com`（28 万）
+- `claude-plugins.dev`、`claudepluginhub.com`
+- `tonsofskills.com`
+- `agentskills.so`（跟着 skills.sh 走）
+
+**需要主动提交**：
+
+| 目录 | 月访问 | 怎么进 |
+|---|---|---|
+| `clawhub.ai` | 380 万 | `clawhub skill publish`（OpenClaw 生态，权重最高） |
+| `lobehub.com/skills` | 140 万 | 走站内提交流程 |
+| `skills.sh` | 370 万 | 网页表单提交 |
+| `smithery.ai` | 45 万 | 站内提交 |
+| `mcp.directory` | 13 万 | 提交仓库 |
+| `claudeskills.info` | 10 万 | 免费提交 |
+| `skillsdirectory.com` | 8 万 | 免费提交（会跑安全扫描） |
+
+> ⚠️ **skills.sh 不审核。** 它只负责收录和展示，不做代码审查、不跑沙箱、不做依赖审计——
+> 「出现在目录里」只代表有人提交过，不代表安全。所以本项目的 README 把「不做什么」
+> 写在明处，就是为了给装的人一个判断依据。
 
 ## 用法
 
