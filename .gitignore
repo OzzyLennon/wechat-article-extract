@@ -1,0 +1,22 @@
+# 抓取产物
+wx_*.txt
+wx_*.md
+wx_images/
+imgs/
+out/
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# 编辑器 / 系统
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# 抓下来的文章正文属于第三方版权内容，不要提交进仓库
+articles/
+*.html
