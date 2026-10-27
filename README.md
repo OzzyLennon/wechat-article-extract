@@ -32,11 +32,14 @@ cd wechat-article-extract
 pip install -r requirements.txt
 ```
 
-作为 Agent Skill 安装（走 `npx skills` 协议）：
+作为 Agent Skill 安装（走 `npx skills` 协议，需要 Node.js ≥ 22.20）：
 
 ```bash
 npx skills add https://github.com/OzzyLennon/wechat-article-extract --skill wechat-article-extract
 ```
+
+本仓库是「单技能仓库」结构——`SKILL.md` 直接放在根目录。这正是 `skills` CLI 支持的发现位置之一，
+所以不需要 `skills/<name>/` 子目录嵌套。
 
 ## 会被哪些目录收录
 
